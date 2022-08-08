@@ -22,7 +22,7 @@ import {v4 as uuidv4} from 'uuid';
  */
 const ENDPOINT_URL = 'https://chat-quickstart.communication.azure.com/';
 // const USER_ID = '8:acs:a5681390-2336-476e-b7c8-5b87c9fba94a_00000013-1012-b11a-570c-113a0d00bf5e';
-const TOKEN = 'eyJhbGciOiJSUzI1NiIsImtpZCI6IjEwNiIsIng1dCI6Im9QMWFxQnlfR3hZU3pSaXhuQ25zdE5PU2p2cyIsInR5cCI6IkpXVCJ9.eyJza3lwZWlkIjoiYWNzOmE1NjgxMzkwLTIzMzYtNDc2ZS1iN2M4LTViODdjOWZiYTk0YV8wMDAwMDAxMy0xMTUzLWU3YWMtN2YwNy0xMTNhMGQwMGQwNzciLCJzY3AiOjE3OTIsImNzaSI6IjE2NTk3NjA2OTAiLCJleHAiOjE2NTk4NDcwOTAsImFjc1Njb3BlIjoiY2hhdCx2b2lwIiwicmVzb3VyY2VJZCI6ImE1NjgxMzkwLTIzMzYtNDc2ZS1iN2M4LTViODdjOWZiYTk0YSIsImlhdCI6MTY1OTc2MDY5MH0.RT53jSSQrwMXhJE7vBV4sifgx7slBfxBaQ0SExWIawCFn1b91_mmBHnkADdZ3lrO67rWpSOTh3FpUAlzkLjbgx0kysDyztU0G5wPBvNtKcTlobPovY7ULhnzg9yFsreB5IXyJEAFXr2o7xqKISbqU5y5mVLI4iKuPfMYgRC-DcwIWAH_cuvL87P3hpdz5Dmg2KZ_-z8_XoJ58eej6inMlUGFBiVHZ7831H-GEqa1Puaw9xaRffFkuI1QKuuAGCTJfnyA1aRs1ewstMNXzlnues0r0SkU85S5phMfldQB0q516MnG1pEyGvPUFVhAJ91lIkTfI8yKinVE3KUPiEUa9w';
+const TOKEN = 'eyJhbGciOiJSUzI1NiIsImtpZCI6IjEwNiIsIng1dCI6Im9QMWFxQnlfR3hZU3pSaXhuQ25zdE5PU2p2cyIsInR5cCI6IkpXVCJ9.eyJza3lwZWlkIjoiYWNzOmI2MzAyNjUwLTljYzYtNDA2Ni1hMzU3LWJhMDM2ZmEzOGY1MF8wMDAwMDAxMy0xZjk0LWMyZGUtNTcwYy0xMTNhMGQwMDBhNzQiLCJzY3AiOjE3OTIsImNzaSI6IjE2NTk5OTk4MjEiLCJleHAiOjE2NjAwODYyMjEsImFjc1Njb3BlIjoiY2hhdCx2b2lwIiwicmVzb3VyY2VJZCI6ImI2MzAyNjUwLTljYzYtNDA2Ni1hMzU3LWJhMDM2ZmEzOGY1MCIsImlhdCI6MTY1OTk5OTgyMX0.JNUSW9yoyjwQiM89xU0FW3jMpbejyRKa-_C3jv03Q4nig8D14q6sEcP-7mWbuRXQCfRvZqv9UUM9rc-A5r1-lxcOWTPN8PHIaYREgNagTLJfNHIZBpDUn0asiyc7ta-IJvDGof-GJQVhaGj2zI-wowh9L6WDh_cp1AqFKbLMCvQC2piJznveK4ZRQTpCth4rCBAnRU8Qz3FOIdm4Y9wXcm4PKq2CQQ41g36Tf7jUJTcjQauV_Z0ZPgoA-OeTW0Kl6HQ7xGQ5nGhwRony4h8fYMtSUKdoJI4oBw5cuK5P0rjbIYQz5cabwj_75uhfL5pndoY4JJ3AE2NmAgbjdxjT8w';
 
 /**
  * Display name for the local participant.
@@ -126,7 +126,7 @@ function App(): JSX.Element {
     if (credential === undefined) {
         return <h3>Failed to construct credential. Provided token is malformed.</h3>;
     }
-    return <h3>Initializing...</h3>;
+    return <div><h3>Initializing... </h3><span>Enter the required vars in the url</span></div>;
 }
 
 const containerStyle: CSSProperties = {
